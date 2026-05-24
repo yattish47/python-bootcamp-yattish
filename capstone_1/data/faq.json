@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "question": "What is your shipping policy?",
+    "answer": "We offer free standard shipping on all orders over $50. Standard shipping takes 5-7 business days. Express shipping (2-3 business days) is available for $9.99. Overnight shipping is available for $24.99. All orders are processed within 1-2 business days after payment confirmation.",
+    "keywords": ["shipping", "delivery", "ship", "postage", "free shipping", "express", "overnight", "dispatch"]
+  },
+  {
+    "id": 2,
+    "question": "What is your return policy?",
+    "answer": "We accept returns within 30 days of delivery. Items must be unused, in their original packaging, and in resaleable condition. To initiate a return, contact our support team with your order ID. Once we receive and inspect the item, refunds are processed within 5-7 business days to your original payment method. Sale items are final sale and cannot be returned.",
+    "keywords": ["return", "refund", "exchange", "send back", "return policy", "money back", "30 days"]
+  },
+  {
+    "id": 3,
+    "question": "What payment methods do you accept?",
+    "answer": "We accept all major credit and debit cards (Visa, MasterCard, American Express, Discover), PayPal, Apple Pay, Google Pay, and ShopPy store credit. All transactions are secured with 256-bit SSL encryption. We do not store your full card details on our servers.",
+    "keywords": ["payment", "pay", "credit card", "debit card", "paypal", "apple pay", "google pay", "visa", "mastercard", "checkout"]
+  },
+  {
+    "id": 4,
+    "question": "How do I reset my account password?",
+    "answer": "To reset your password, go to the login page and click 'Forgot Password'. Enter your registered email address and we'll send you a password reset link within 5 minutes. The link expires in 24 hours. If you don't receive the email, check your spam folder or contact support. For security reasons, we cannot reset passwords manually.",
+    "keywords": ["password", "reset password", "forgot password", "login", "account", "sign in", "access", "locked out"]
+  },
+  {
+    "id": 5,
+    "question": "How do I apply a discount code?",
+    "answer": "Discount codes can be applied at checkout. In the order summary section, you'll see a field labelled 'Promo Code' or 'Discount Code'. Enter your code and click 'Apply'. The discount will be reflected in your total before you complete payment. Only one discount code can be used per order. Codes cannot be applied after an order is placed.",
+    "keywords": ["discount", "promo code", "coupon", "voucher", "promotional code", "code", "offer", "deal", "sale"]
+  },
+  {
+    "id": 6,
+    "question": "Is a product available or back in stock?",
+    "answer": "Product availability is shown in real-time on each product page. If an item shows 'Out of Stock', you can click 'Notify Me' to receive an email when it's back in stock. Restock timelines vary by product — typically 1-3 weeks for popular items. For urgent availability questions about a specific product, contact our support team with the product name or SKU.",
+    "keywords": ["stock", "available", "availability", "back in stock", "out of stock", "inventory", "when available", "restock", "notify me"]
+  },
+  {
+    "id": 7,
+    "question": "Can I change or cancel my order?",
+    "answer": "Orders can be modified or cancelled within 1 hour of being placed, as long as they haven't entered the packing stage. To request a change or cancellation, contact support immediately with your order ID. Once an order has shipped, it cannot be cancelled — you would need to initiate a return instead. We process orders quickly, so please act fast.",
+    "keywords": ["cancel", "change order", "modify order", "cancel order", "update order", "edit order", "wrong item"]
+  },
+  {
+    "id": 8,
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we ship to over 50 countries worldwide. International shipping rates and delivery times vary by destination. Standard international shipping takes 10-21 business days. Express international shipping (5-10 business days) is available for select countries. Import duties, taxes, and customs fees are the responsibility of the recipient and are not included in our shipping charges.",
+    "keywords": ["international", "overseas", "global shipping", "ship abroad", "outside US", "worldwide", "customs", "import", "duties"]
+  }
+]

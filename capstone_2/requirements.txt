@@ -1,0 +1,6 @@
+openai
+crewai
+fastapi
+uvicorn
+python-dotenv
+pydantic

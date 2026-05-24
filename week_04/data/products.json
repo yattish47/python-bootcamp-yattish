@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "price": 79.99,
+    "category": "electronics",
+    "in_stock": true,
+    "description": "Over-ear Bluetooth headphones with 30-hour battery life and active noise cancellation.",
+    "tags": ["audio", "bluetooth", "wireless"]
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "price": 149.99,
+    "category": "electronics",
+    "in_stock": false,
+    "description": "Tenkeyless mechanical keyboard with Cherry MX Blue switches and RGB backlighting.",
+    "tags": ["keyboard", "mechanical", "rgb"]
+  },
+  {
+    "id": 3,
+    "name": "Standing Desk Mat",
+    "price": 45.00,
+    "category": "office",
+    "in_stock": true,
+    "description": "Anti-fatigue ergonomic mat for standing desks, 90x60cm with bevelled edges.",
+    "tags": ["ergonomic", "standing", "mat"]
+  },
+  {
+    "id": 4,
+    "name": "Ergonomic Chair",
+    "price": 399.00,
+    "category": "office",
+    "in_stock": true,
+    "description": "Fully adjustable mesh office chair with lumbar support and breathable back.",
+    "tags": ["chair", "ergonomic", "mesh"]
+  },
+  {
+    "id": 5,
+    "name": "USB-C Hub",
+    "price": 35.99,
+    "category": "electronics",
+    "in_stock": true,
+    "description": "7-in-1 USB-C hub with 4K HDMI, 3x USB-A 3.0, SD card reader, and 100W PD charging.",
+    "tags": ["usb-c", "hub", "adapter"]
+  }
+]
