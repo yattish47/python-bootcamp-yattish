@@ -127,12 +127,46 @@ else:
 #   For multiples of 3 print "Fizz", multiples of 5 print "Buzz",
 #   multiples of both print "FizzBuzz", otherwise print the number.
 
+count2 : int = 0
+for i in range(21):
+    if(i%3 == 0 and i%5 == 0):
+        print("FizzBuzz")
+    elif(i%3 == 0):
+        print("Buzz")
+    elif(i%5 == 0):
+        print("Fizz")
+    else:
+        print(i)
+
+
 # Exercise 2:
 #   Given a list of temperatures in Celsius:
 #   temps = [22, 35, 18, 40, 29, 15]
 #   Print only temperatures above 30, prefixed with "HOT: ".
 
+temps = [22, 35, 18, 40, 29, 15]
+
+for temp in temps:
+    if(temp > 30):
+        print(f"\nHOT: {temp}")
+
+
 # Exercise 3:
 #   Use a match statement that takes an HTTP method string ("GET", "POST",
 #   "PUT", "DELETE") and prints what operation it represents.
 #   Handle an unknown method with a default case.
+http_method = "GET"
+
+match http_method:
+    case "GET":
+        msg2 = "Retrieve a resource"
+    case "POST":
+        msg2 = "Create a new resource"
+    case "PUT":
+        msg2 = "Update a resource"
+    case "DELETE":
+        msg2 = "Delete a resource"
+    case _:
+        msg2 = "Unknown HTTP method"
+
+print(msg2)
