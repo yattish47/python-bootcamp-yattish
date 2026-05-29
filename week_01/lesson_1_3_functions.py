@@ -111,10 +111,10 @@ print(run_twice(lambda x: x + 1, 5))   # 7
 def divide(a: float, b: float) -> float:
     """Return a divided by b. Raises ValueError if b is zero."""
     if b == 0:
-        raise ValueError("Cannot divide by zero")
+        return("Cannot divide by zero")
     return a / b
 
-help(divide)               # prints the docstring
+print(divide(4,0))               # prints the docstring
 
 
 # ─── EXERCISES ───────────────────────────────────────────────────────────────
@@ -126,10 +126,39 @@ help(divide)               # prints the docstring
 #   clamp(-5, 0, 10) → 0
 #   clamp(7, 0, 10)  → 7
 
+def clamp(value: float, min_val: float, max_val: float) -> float:
+    if(value < min_val):
+        return min_val
+    elif(value > max_val):
+        return max_val
+    else:
+        return value
+
+
+print(clamp(15, 0, 10))
+print(clamp(-5, 0, 10))
+print(clamp(7, 0, 10))
+
 # Exercise 2:
 #   Write a function `summarize(**stats)` that accepts any keyword arguments
 #   and prints them as "key: value" pairs, sorted by key name.
 
+def summarize(**stats):
+    for key, val in sorted(stats.items()):
+        print(f'{key} : {val}')
+
+summarize(revenue=5000, users=120, errors=3, uptime=99.9)
 # Exercise 3:
 #   Use sorted() with a lambda to sort this list of strings by their LENGTH
 #   (shortest first): words = ["banana", "fig", "apple", "kiwi", "strawberry"]
+
+#   lambda w: len(w) means — "given a word w, return len(w)".
+
+
+words = ["banana", "fig", "apple", "kiwi", "strawberry"]
+result = sorted(words, key=lambda w: len(w))
+
+print(result)
+
+
+# ⏺ len() returns the length of a string — the number of characters.
