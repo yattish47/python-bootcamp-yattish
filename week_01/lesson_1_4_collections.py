@@ -205,8 +205,9 @@ print(words_count)
 #   unique_sorted([3, 1, 4, 1, 5, 9, 2, 6, 5, 3]) → [1, 2, 3, 4, 5, 6, 9]
 
 def unique_sorted(items: list)-> list:
-    unique = set(items)
-    sorted_item = sorted(unique)
-    return sorted_item
+    # unique = set(items)
+    # sorted_item = sorted(unique)
+    # return sorted_item
+    return sorted(set(items))
 
 print(unique_sorted([3, 1, 4, 1, 5, 9, 2, 6, 5, 3]))
