@@ -164,6 +164,11 @@ print(score_dict)          # {'Ali': 88, 'Bob': 95, 'Charlie': 72}
 #   Given: products = [{"name": "Laptop", "price": 1200}, {"name": "Mouse", "price": 25},
 #                      {"name": "Monitor", "price": 350}, {"name": "Keyboard", "price": 80}]
 #   Using a list comprehension, extract only the names of products under $100.
+products = [{"name": "Laptop", "price": 1200}, {"name": "Mouse", "price": 25}, {"name": "Monitor", "price": 350}, {"name": "Keyboard", "price": 80}]
+
+product_name = [product["name"] for product in products if product["price"] < 100]
+print(product_name)
+
 
 # Exercise 2:
 #   Given a list of words, use a dict comprehension to build a frequency map:
@@ -171,7 +176,37 @@ print(score_dict)          # {'Ali': 88, 'Bob': 95, 'Charlie': 72}
 #   Expected: {"apple": 3, "banana": 2, "cherry": 1}
 #   Hint: use words.count(word)
 
+words = ["apple", "banana", "apple", "cherry", "banana", "apple"]
+
+words_count = {word : words.count(word) for word in words }
+print(words_count)
+
+# No, it does iterate each time — words.count(word) scans the entire list every time it's called. So for "apple" appearing 3 times, it scans the full list 3 times.
+
+#   The iterations look like this:
+#   word = "apple"  → words.count("apple") scans whole list → 3
+#   word = "banana" → words.count("banana") scans whole list → 2
+#   word = "apple"  → words.count("apple") scans whole list → 3  (again, wasted)
+#   word = "cherry" → words.count("cherry") scans whole list → 1
+#   word = "banana" → words.count("banana") scans whole list → 2  (again, wasted)
+#   word = "apple"  → words.count("apple") scans whole list → 3  (again, wasted)
+
+#   It gives the right answer because dict keys are unique — duplicate keys just overwrite each other. So even though "apple" is processed 3 times, the dict only keeps one "apple":
+#   3 entry.
+
+#   It works, but it's inefficient. The cleaner way (which you'll see in real code) uses collections.Counter:
+#   from collections import Counter
+#   words_count = Counter(words)   # scans the list exactly once
+
+
 # Exercise 3:
 #   Write a function `unique_sorted(items: list) -> list` that removes duplicates
 #   from a list and returns the result sorted. Use set() and sorted().
 #   unique_sorted([3, 1, 4, 1, 5, 9, 2, 6, 5, 3]) → [1, 2, 3, 4, 5, 6, 9]
+
+def unique_sorted(items: list)-> list:
+    unique = set(items)
+    sorted_item = sorted(unique)
+    return sorted_item
+
+print(unique_sorted([3, 1, 4, 1, 5, 9, 2, 6, 5, 3]))
