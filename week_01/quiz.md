@@ -19,6 +19,7 @@ b) `<class 'str'>`
 c) TypeError — can't reassign different types
 d) `<class 'object'>`
 
+b ✅
 ---
 
 ### Q2. What does this print?
@@ -32,6 +33,8 @@ a) `4`
 b) `5`
 c) `2`
 d) IndexError
+
+d ❌ — correct answer is a. Negative indexing is valid: nums[-1]=5, nums[-2]=4.
 
 ---
 
@@ -47,6 +50,7 @@ b) `[1, 9]`
 c) `[0, 1, 4, 9, 16]`
 d) `[1, 9, 25]`
 
+b ✅
 ---
 
 ### Q4. Which of these correctly checks if a variable is None?
@@ -56,6 +60,7 @@ b) `if x is None:`
 c) `if not x:`
 d) `if x === None:`
 
+b ✅
 ---
 
 ### Q5. What does this function return when called as `greet()`?
@@ -70,6 +75,7 @@ b) `"Hello, World!"`
 c) TypeError — missing required argument
 d) `None`
 
+b ✅
 ---
 
 ### Q6. What is the output?
@@ -86,6 +92,7 @@ b) `99`
 c) `KeyError`
 d) `[2, 99]`
 
+b ✅
 ---
 
 ### Q7. What does `*args` capture in this call?
@@ -102,6 +109,7 @@ b) `(1, 2, 3)`
 c) `{1, 2, 3}`
 d) `{"args": [1, 2, 3]}`
 
+a ❌ — correct answer is b. *args always captures a tuple (1, 2, 3), not a list.
 ---
 
 ### Q8. What is the output?
@@ -117,6 +125,7 @@ b) `"ox"`
 c) `"bee"`
 d) `"elephant"`
 
+b ✅
 ---
 
 ### Q9. Which line produces the set `{1, 2, 3}`?
@@ -126,6 +135,7 @@ b) `s = {1, 2, 3, 2, 1}`
 c) Both a and b
 d) Neither — sets must be initialized empty
 
+b ❌ — correct answer is c. Both set([...]) and {...} deduplicate, so both produce {1, 2, 3}.
 ---
 
 ### Q10. What does this print?
@@ -141,6 +151,7 @@ b) `1a2b3c`
 c) `(1, a)(2, b)(3, c)`
 d) TypeError
 
+a ✅
 ---
 
 ## Answers

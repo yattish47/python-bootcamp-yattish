@@ -28,6 +28,33 @@ A dog is a loyal animal.
 
 # YOUR CODE HERE
 
+lowerCaseText = text.lower()
+cleanText = lowerCaseText.translate(str.maketrans("", "", string.punctuation))
+words = cleanText.split()
+print(lowerCaseText)
+print(cleanText)
+print(words)
+
+words_count = {word : words.count(word) for word in words}
+
+sorted_words_count = sorted(words_count.items(), key=lambda x: x[1])
+
+print(f"words_count : {words_count}")
+print(f"sorted_words_count : {sorted_words_count}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # ─── SOLUTION (remove before sharing) ────────────────────────────────────────
 # from collections import Counter
