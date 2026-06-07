@@ -285,9 +285,11 @@ class Rectangle:
         # width, height = [float(x) for x in s.split("x")]
         return cls(width, height)
     
+    # without repr it defaulted to memory address, after adding repr it shows this custom message
     def __repr__(self):
         return(f"Rectangle(width={self.width}, height={self.height})")
 
+    # after adding str it shows this now when printing
     def __str__(self):
         return(f"Width = {self.width}, Height = {self.height}")
 
